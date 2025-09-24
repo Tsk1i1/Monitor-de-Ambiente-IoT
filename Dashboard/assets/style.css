@@ -1,0 +1,61 @@
+/* Importa uma fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* --- Estilos Globais --- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Aplica a nova fonte */
+    background-color: #1e1e2f; /* Fundo azul-escuro/roxo */
+    color: #f0f0f0; /* Texto quase branco */
+}
+
+.app-container {
+    padding: 20px;
+}
+
+/* --- Cabeçalho --- */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-weight: 300; /* Fonte mais fina para o título */
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+/* --- Grid dos Gráficos --- */
+.graphs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Grid com 2 colunas */
+    gap: 25px; /* Aumenta o espaçamento entre os gráficos */
+}
+
+/* Gráfico largo (temperatura) que ocupa 2 colunas */
+.graph-item-wide {
+    grid-column: 1 / -1;
+}
+
+/* Estilos internos do Plotly (Dash) - */
+.dash-graph {
+    background-color: #27293d; /* Cor de fundo para cada gráfico */
+    border: 1px solid #404258;
+    border-radius: 8px;
+}
+/* --- Correção para o Esticamento Vertical dos Gráficos --- */
+
+/* Define um contexto de posicionamento para o item do grid */
+.graph-item, .graph-item-wide {
+    position: relative;
+    height: 350px; /* Força a altura do contentor a ser a mesma do gráfico */
+}
+
+.dash-graph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
