@@ -30,9 +30,10 @@ A arquitetura é baseada em componentes FIWARE:
 3. **Orion Context Broker**: gerencia o contexto em tempo real.
 4. **STH-Comet**: armazena o histórico dos atributos para consultas.
 5. **Dashboard Python/Dash**: acessa o STH-Comet e apresenta os gráficos.
+---
 
-![Arquitetura da Solução](images/arquitetura.png)
-[👉 Clique aqui para baixar o diagrama]((https://github.com/Tsk1i1/Monitor-de-Ambiente-IoT/blob/main/Esquema.drawio))
+![Arquitetura da Solução](https://github.com/Tsk1i1/Monitor-de-Ambiente-IoT/blob/main/Images/Esquema%20de%20Arquitetura.png)
+[👉 Clique aqui para baixar o diagrama](https://github.com/Tsk1i1/Monitor-de-Ambiente-IoT/blob/main/Esquema.drawio)
 
 ---
 
@@ -91,7 +92,8 @@ Componentes e conexões principais:
      python3 dashboard.py
      ```
    - Acesse via navegador em `http://<IP_DA_VM>:5000`.
-![Dashboard](images/arquitetura.png)
+     
+![Dashboard](https://github.com/Tsk1i1/Monitor-de-Ambiente-IoT/blob/main/Images/Dashboard_img)
 
 ### 4. Operação
 - O ESP32 envia leituras a cada **5 segundos**.
