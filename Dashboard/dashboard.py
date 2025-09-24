@@ -73,7 +73,7 @@ app.layout = html.Div(className='app-container', children=[
 
     # Cabeçalho simplificado com apenas o título
     html.Div(className='header', children=[
-        html.H1('Monitoramento do Armazém de Vinhos')
+        html.H1('Monitoramento do Armazém')
     ]),
 
     # O contentor para os nossos três gráficos
@@ -109,8 +109,8 @@ def create_graph_update_callback(title: str, yaxis_title: str, color: str):
     @app.callback(Output(f'{title.lower()}-graph', 'figure'), Input(f'{title.lower()}-store', 'data'))
     def update_graph(stored_data):
         layout = {
-            'title': f'Histórico de {title}', 'xaxis_title': 'Horário (São Paulo)', 'yaxis_title': yaxis_title,
-            'height': 350,  # <<-- ESTA É A CORREÇÃO CRUCIAL
+            'title': f'{title}', 'xaxis_title': 'Ho´rario (São Paulo)', 'yaxis_title': yaxis_title,
+            'height': 350,
             'hovermode': 'x unified', 'plot_bgcolor': '#34495e', 'paper_bgcolor': '#2c3e50',
             'font': {'color': '#ecf0f1'}, 'xaxis': {'gridcolor': '#555'}, 'yaxis': {'gridcolor': '#555'}
         }
