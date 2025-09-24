@@ -66,7 +66,7 @@ Componentes e conexões principais:
 
 ### 2. Software – ESP32
 1. Instale a [Arduino IDE](https://www.arduino.cc/en/software).
-2. Adicione a placa **ESP32** no Gerenciador de Placas (URL: `https://dl.espressif.com/dl/package_esp32_index.json`).
+2. Copie o código.
 3. Instale as bibliotecas:
    - `WiFi`
    - `PubSubClient`
